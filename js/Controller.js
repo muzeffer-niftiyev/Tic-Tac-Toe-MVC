@@ -33,7 +33,7 @@ export default class Controller {
   }
 
   startNewGame() {
-    this.model.resetForNewGame();
+    this.model.resetGame();
     this.view.addToBoard(this.model.board);
     this.view.hideModal();
   }

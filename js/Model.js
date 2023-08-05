@@ -8,7 +8,7 @@ export default class Model {
   }
 
   makeMove(i) {
-    if (this.board[i] !== "") return;
+    if (this.board[i]) return;
 
     this.board[i] = this.currentPlayer;
 
@@ -52,7 +52,7 @@ export default class Model {
     }
   }
 
-  resetForNewGame() {
+  resetGame() {
     this.board = ["", "", "", "", "", "", "", "", ""];
     this.currentPlayer = "X";
     this.winner = null;
