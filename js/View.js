@@ -7,6 +7,23 @@ export default class View {
     this.message = document.querySelector(".message");
     this.newGameBtn = document.querySelector(".new");
     this.resetBtn = document.querySelector(".reset");
+
+  }
+
+  listenButtonClick(callback) {
+      this.buttons.forEach(btn => {
+        btn.addEventListener("click", () => {
+          callback(btn);
+        });
+      })
+  }
+
+  listenNewGameBtnClick(callback) {
+    this.newGameBtn.addEventListener('click', callback)
+  }
+
+  listenResetBtnClick(callback) {
+    this.resetBtn.addEventListener('click', callback)
   }
 
   addToBoard(board) {

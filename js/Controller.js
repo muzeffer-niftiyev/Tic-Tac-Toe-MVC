@@ -3,20 +3,18 @@ export default class Controller {
     this.model = model;
     this.view = view;
 
-    this.view.buttons.forEach((btn) => {
-      btn.addEventListener("click", () => {
-        this.buttonClickHandler(btn.dataset.value);
-        this.view.switchBtnClass(btn.textContent, btn);
-      });
+    this.view.listenButtonClick((btn) => {
+      this.buttonClickHandler(btn.dataset.value);
+      this.view.switchBtnClass(btn.textContent, btn);
     });
 
-    this.view.newGameBtn.addEventListener("click", () => {
-      this.newGameClickHandler();
+    this.view.listenNewGameBtnClick(() => {
+      this.newGameClickHandler()
     });
 
-    view.resetBtn.addEventListener("click", () => {
+    this.view.listenResetBtnClick(() => {
       this.resetClickHandler();
-    });
+    })
   }
 
   buttonClickHandler(i) {
