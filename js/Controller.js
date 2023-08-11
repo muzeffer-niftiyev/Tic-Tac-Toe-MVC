@@ -2,19 +2,21 @@ export default class Controller {
   constructor(model, view) {
     this.model = model;
     this.view = view;
+  }
 
+  init() {
     this.view.listenButtonClick((btn) => {
       this.buttonClickHandler(btn.dataset.value);
       this.view.switchBtnClass(btn.textContent, btn);
     });
 
     this.view.listenNewGameBtnClick(() => {
-      this.newGameClickHandler()
+      this.newGameClickHandler();
     });
 
     this.view.listenResetBtnClick(() => {
       this.resetClickHandler();
-    })
+    });
   }
 
   buttonClickHandler(i) {
