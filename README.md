@@ -43,6 +43,7 @@ git clone git@github.com:muzeffer-niftiyev/Tic-Tac-Toe-MVC.git
 ```
 
 2. **Install Dependencies**
+   
    Run this command at terminat of the project.
 
 ```bash
@@ -50,6 +51,7 @@ git clone git@github.com:muzeffer-niftiyev/Tic-Tac-Toe-MVC.git
 ```
 
 3. **Run the Project**
+   
    On your terminal simply add this command.
 
 ```bash
