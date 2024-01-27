@@ -4,7 +4,7 @@
 
 ## 📝 Description
 
-Welcome to the Tic Tac Toe game!
+Welcome to the Tic Tac Toe game! <br>
 This project lets you feel the great experience of tic tac toe game. The project was made using MVC pattern and bundled with webpack.
 
 #### 💻 Technologies
